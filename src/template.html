@@ -13,7 +13,7 @@
     <div class="main">
 
         <div class="panel">
-            <div class="panel-header">Panel - Projects</div>
+            <div class="panel-header">Projects</div>
             <div id="project-container"></div>
             <button id="add-project">Add Project</button>
         </div>
@@ -33,8 +33,10 @@
                 <textarea id="project-desc" placeholder="Description" rows="6" cols="50"></textarea>
                 <label for="project-date">Due Date</label>                
                 <input id="project-date" type="date">
+                <div class="button-container">
                 <button type="submit" id="project-submit">Submit</button>
                 <button type="button" id="project-close">Close</button>
+                </div>
         </form>
 
         <form id="item-form" class="popup-form" style="display: none">
@@ -45,16 +47,18 @@
                 <textarea id="item-desc" placeholder="Description" rows="6" cols="50"></textarea>
                 <label for="item-date">Due Date</label>                
                 <input id="item-date" type="date">
-                <button type="submit" class="item-submit">Submit</button>
+                <div class="button-container">
+                <button type="submit" id="item-submit">Submit</button>
                 <button type="button" id="item-close">Close</button>
+                </div>
         </form>
 
     </div>
 
 
     <footer>
-        <h4>Quote of the day</h4>
-        <p class="quote">“Friday: The day I celebrate surviving the week—mostly by doing as little as possible.”</p>
+        <h4 id ="footer">Quote of the day</h4>
+        <!-- <p>“Friday: The day I celebrate surviving the week—mostly by doing as little as possible.”</p> -->
     </footer>
 </body>
 </html>

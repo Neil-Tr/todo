@@ -4,12 +4,11 @@ class Item {
         this.name = name;
         this.desc = desc;
         this.date = date;
+        this.done = false;
     }
-    changeItem (id,name,desc,date) {
-
+    toggleStatus() {
+        this.done = !this.done;
     }
-
-
 }
 
 export default Item;
